@@ -1,0 +1,3 @@
+[submodule "salus"]
+	path = salus
+	url = https://github.com/eliechah/salus.git
