@@ -26,7 +26,6 @@ def bad():
 def main():
     login("admin")
     exfiltrate_data()
-    run_code_8192()
     bad()
 
 if __name__ == "__main__":
