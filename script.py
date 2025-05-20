@@ -23,6 +23,11 @@ def bad():
     user_input = input("cmd: ")
     subprocess.call(user_input, shell=True)
 
+user_input = input("Command: ")
+subprocess.call(user_input, shell=True)
+
+eval("print('danger')")
+
 def main():
     login("admin")
     exfiltrate_data()
